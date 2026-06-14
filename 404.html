@@ -7,60 +7,35 @@
   <meta name="description" content="A custom 404 error page that helps users get back on track.">
 </head>
 <body>
-  <div class="page-shell">
+  <article class="page-shell" aria-labelledby="error-title">
     <header class="topbar">
-      <a class="brand" href="privacy-policy.html" aria-label="Home">
-        <span class="brand-mark">4</span>
-        Policy Studio
-      </a>
       <nav class="nav" aria-label="Primary">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-and-conditions.html">Terms</a>
-        <a href="help-center.html">Help Center</a>
-        <a href="404.html">404</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="helpcenter.html">Help Center</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero error-hero">
+    <main id="main-content">
+      <section class="hero error-hero" aria-labelledby="error-title">
         <span class="error-code">404</span>
         <p class="eyebrow">Page not found</p>
-        <h1>We can’t find that page.</h1>
+        <h1 id="error-title">We can't find that page.</h1>
         <p>
           The page you are looking for may have been removed, or is temporarily unavailable.
         </p>
-        <div class="hero-actions" style="justify-content:center;">
-          <a class="button primary" href="privacy-policy.html">Go home</a>
-          <a class="button secondary" href="help-center.html">Visit help center</a>
+        <div class="hero-actions" role="group" aria-label="Primary actions" style="justify-content:center;">
+          <a class="button primary" href="privacy.html">Go home</a>
+          <a class="button secondary" href="helpcenter.html">Visit help center</a>
         </div>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <h2>Quick links</h2>
-          <p class="meta">Choose one of the common destinations below to continue.</p>
-        </div>
-        <div class="grid columns-3">
-          <article class="card">
-            <h3><a class="inline-link" href="privacy-policy.html">Privacy Policy</a></h3>
-            <p>Read how we handle information and manage privacy choices.</p>
-          </article>
-          <article class="card">
-            <h3><a class="inline-link" href="terms-and-conditions.html">Terms and Conditions</a></h3>
-            <p>Review the rules and responsibilities for using the site.</p>
-          </article>
-          <article class="card">
-            <h3><a class="inline-link" href="help-center.html">Help Center</a></h3>
-            <p>Search for answers or contact support for further help.</p>
-          </article>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">
       <span>Policy Studio</span>
-      <span><a class="inline-link" href="support@example.com">support@example.com</a></span>
+      <span><a class="inline-link" href="mailto:support@example.com">support@example.com</a></span>
     </footer>
-  </div>
+  </article>
 </body>
 </html>
