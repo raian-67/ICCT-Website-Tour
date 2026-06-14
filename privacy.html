@@ -7,44 +7,39 @@
   <meta name="description" content="Read how we collect, use, and protect your personal information.">
 </head>
 <body>
-  <div class="page-shell">
+  <article class="page-shell" aria-labelledby="policy-title">
     <header class="topbar">
-      <a class="brand" href="privacy-policy.html" aria-label="Home">
-        <span class="brand-mark">P</span>
-        Policy Studio
-      </a>
       <nav class="nav" aria-label="Primary">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-and-conditions.html">Terms</a>
-        <a href="help-center.html">Help Center</a>
-        <a href="404.html">404</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="helpcenter.html">Help Center</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
+    <main id="main-content">
+      <section class="hero" aria-labelledby="policy-title">
         <p class="eyebrow">Legal information</p>
-        <h1>Privacy Policy</h1>
+        <h1 id="policy-title">Privacy Policy</h1>
         <p>
           We respect your privacy and keep this policy clear about what data we collect,
           why we collect it, and how you can control it.
         </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#overview">Read the policy</a>
-          <a class="button secondary" href="help-center.html">Contact support</a>
+        <div class="hero-actions" role="group" aria-label="Primary actions">
+          <a class="button primary" href="helpcenter.html">Contact support</a>
         </div>
-        <div class="meta-list" aria-label="Policy highlights">
-          <span class="meta-pill">Effective: June 14, 2026</span>
-          <span class="meta-pill">Applies to site visitors</span>
-          <span class="meta-pill">Email support available</span>
-        </div>
+        <ul class="meta-list" aria-label="Policy highlights">
+          <li class="meta-pill">Effective: June 14, 2026</li>
+          <li class="meta-pill">Last updated: June 14, 2026</li>
+          <li class="meta-pill">Applies to site visitors</li>
+          <li class="meta-pill">Email support available</li>
+        </ul>
       </section>
 
-      <section class="section" id="overview">
-        <div class="section-heading">
-          <h2>Overview</h2>
+      <section class="section" id="overview" aria-labelledby="overview-title">
+        <header class="section-heading">
+          <h2 id="overview-title">Overview</h2>
           <p class="meta">This policy explains our standard practices for data collection, use, storage, and disclosure.</p>
-        </div>
+        </header>
         <div class="grid columns-2">
           <article class="card">
             <h3>Information we collect</h3>
@@ -64,46 +59,12 @@
           </article>
         </div>
       </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <h2>Your choices</h2>
-          <p class="meta">You can manage cookies, opt out of certain communications, and request access to your personal data.</p>
-        </div>
-        <div class="grid columns-3">
-          <article class="card">
-            <h3>Access and correction</h3>
-            <p>You may ask us to review, update, or correct information we hold about you.</p>
-          </article>
-          <article class="card">
-            <h3>Cookies</h3>
-            <p>Browsers can block or remove cookies, though some features may not work as intended.</p>
-          </article>
-          <article class="card">
-            <h3>Marketing</h3>
-            <p>You can unsubscribe from non-essential emails using the link included in each message.</p>
-          </article>
-        </div>
-        <div class="notice">
-          <strong>Data retention:</strong> We keep information only as long as needed for the purposes described above, unless a longer period is required by law.
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <h2>Contact</h2>
-          <p class="meta">Questions about this policy or your data requests can be sent to our support team.</p>
-        </div>
-        <div class="panel">
-          <p>If you have privacy concerns, email <a class="inline-link" href="privacy@example.com">privacy@example.com</a> and include enough detail for us to help you efficiently.</p>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">
       <span>Policy Studio</span>
-      <span><a class="inline-link" href="terms-and-conditions.html">Terms and Conditions</a> · <a class="inline-link" href="help-center.html">Help Center</a></span>
+      <span><a class="inline-link" href="terms.html">Terms and Conditions</a> · <a class="inline-link" href="helpcenter.html">Help Center</a></span>
     </footer>
-  </div>
+  </article>
 </body>
 </html>
