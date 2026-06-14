@@ -7,44 +7,39 @@
   <meta name="description" content="Review the terms and conditions for using our website and services.">
 </head>
 <body>
-  <div class="page-shell">
+  <article class="page-shell" aria-labelledby="terms-title">
     <header class="topbar">
-      <a class="brand" href="privacy-policy.html" aria-label="Home">
-        <span class="brand-mark">T</span>
-        Policy Studio
-      </a>
       <nav class="nav" aria-label="Primary">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-and-conditions.html">Terms</a>
-        <a href="help-center.html">Help Center</a>
-        <a href="404.html">404</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="helpcenter.html">Help Center</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
+    <main id="main-content">
+      <section class="hero" aria-labelledby="terms-title">
         <p class="eyebrow">User agreement</p>
-        <h1>Terms and Conditions</h1>
+        <h1 id="terms-title">Terms and Conditions</h1>
         <p>
           These terms outline the rules for using our website, services, and content.
           Please read them carefully before continuing.
         </p>
-        <div class="hero-actions">
+        <div class="hero-actions" role="group" aria-label="Primary actions">
           <a class="button primary" href="#acceptance">Start here</a>
-          <a class="button secondary" href="help-center.html">Ask a question</a>
+          <a class="button secondary" href="helpcenter.html">Ask a question</a>
         </div>
-        <div class="meta-list">
-          <span class="meta-pill">Effective: June 14, 2026</span>
-          <span class="meta-pill">Last updated: June 14, 2026</span>
-          <span class="meta-pill">Applies globally</span>
-        </div>
+        <ul class="meta-list" aria-label="Policy highlights">
+          <li class="meta-pill">Effective: June 14, 2026</li>
+          <li class="meta-pill">Last updated: June 14, 2026</li>
+          <li class="meta-pill">Applies globally</li>
+        </ul>
       </section>
 
-      <section class="section" id="acceptance">
-        <div class="section-heading">
-          <h2>Acceptance of terms</h2>
+      <section class="section" id="acceptance" aria-labelledby="acceptance-title">
+        <header class="section-heading">
+          <h2 id="acceptance-title">Acceptance of terms</h2>
           <p class="meta">By accessing the site, you agree to follow these terms and any policies referenced here.</p>
-        </div>
+        </header>
         <div class="grid columns-2">
           <article class="card">
             <h3>Permitted use</h3>
@@ -65,44 +60,21 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <h2>Service rules</h2>
-          <p class="meta">We may update features, suspend access, or change content when necessary to run the service.</p>
-        </div>
-        <div class="grid columns-3">
-          <article class="card">
-            <h3>Availability</h3>
-            <p>We aim for continuity, but the site may occasionally be unavailable for maintenance or technical issues.</p>
-          </article>
-          <article class="card">
-            <h3>Intellectual property</h3>
-            <p>All content, branding, and design elements remain protected unless explicitly licensed otherwise.</p>
-          </article>
-          <article class="card">
-            <h3>Liability</h3>
-            <p>We are not liable for indirect or consequential losses to the extent permitted by law.</p>
-          </article>
-        </div>
-        <div class="notice">
-          <strong>Updates:</strong> We may revise these terms at any time. Continued use of the site after changes means you accept the updated version.
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <h2>Governing contact</h2>
+      <section class="section" aria-labelledby="contact-title">
+        <header class="section-heading">
+          <h2 id="contact-title">Governing contact</h2>
           <p class="meta">For legal notices, send a message to our support address and we will route it appropriately.</p>
-        </div>"legal@example.com">legal@example.com</a> with the subject line "Terms Inquiry" for the fastest handling.</p>
-        </div>
-        <p>Email <a class="inline-link" href="legal@example.com">legal@example.com</a> with the subject line "Terms Inquiry" for the fastest handling.</p>
+        </header>
+        <article class="panel">
+          <p>Email <a class="inline-link" href="mailto:legal@example.com">legal@example.com</a> with the subject line "Terms Inquiry" for the fastest handling.</p>
+        </article>
       </section>
     </main>
 
     <footer class="footer">
       <span>Policy Studio</span>
-      <span><a class="inline-link" href="privacy-policy.html">Privacy Policy</a> · <a class="inline-link" href="help-center.html">Help Center</a></span>
+      <span><a class="inline-link" href="privacy.html">Privacy Policy</a> · <a class="inline-link" href="helpcenter.html">Help Center</a></span>
     </footer>
-  </div>
+  </article>
 </body>
 </html>
