@@ -7,86 +7,63 @@
   <meta name="description" content="Browse answers to common questions and support topics.">
 </head>
 <body>
-  <div class="page-shell">
+  <article class="page-shell" aria-labelledby="help-title">
     <header class="topbar">
-      <a class="brand" href="privacy-policy.html" aria-label="Home">
-        <span class="brand-mark">H</span>
-        Policy Studio
-      </a>
       <nav class="nav" aria-label="Primary">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-and-conditions.html">Terms</a>
-        <a href="help-center.html">Help Center</a>
-        <a href="404.html">404</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="helpcenter.html">Help Center</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
+    <main id="main-content">
+      <section class="hero" aria-labelledby="help-title">
         <p class="eyebrow">Support hub</p>
-        <h1>Help Center</h1>
+        <h1 id="help-title">Help Center</h1>
         <p>
           Find quick answers, browse common topics, and connect with support when you need a human.
         </p>
-        <div class="hero-actions">
+        <div class="hero-actions" role="group" aria-label="Primary actions">
           <a class="button primary" href="#faq">Browse FAQs</a>
           <a class="button secondary" href="mailto:support@example.com">Email support</a>
         </div>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <h2>Search the knowledge base</h2>
-          <p class="meta">This page is static, so the search box is visual only, but it mirrors a typical support experience.</p>
-        </div>
-        <div class="panel search-box">
-          <input type="search" aria-label="Search help articles" placeholder="Search topics like billing, account access, or privacy...">
-          <div class="meta-list">
-            <span class="meta-pill">Account access</span>
-            <span class="meta-pill">Billing</span>
-            <span class="meta-pill">Privacy</span>
-            <span class="meta-pill">Technical issues</span>
-          </div>
-        </div>
+      <section class="section" aria-labelledby="help-needed-title">
+        <header class="section-heading">
+          <h2 id="help-needed-title">Need help?</h2>
+          <p class="meta">If you cannot find the answer you need, contact our support team directly.</p>
+        </header>
+        <article class="panel">
+          <p>Email <a class="inline-link" href="mailto:support@example.com">support@example.com</a> and include a short description of your issue.</p>
+        </article>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <h2>Popular topics</h2>
-          <p class="meta">The most common support questions are grouped below for faster browsing.</p>
-        </div>
-        <div class="grid columns-3">
-          <article class="card">
-            <h3>Getting started</h3>
-            <p>Learn how to create an account, update your profile, and navigate the platform.</p>
-          </article>
-          <article class="card">
-            <h3>Billing and plans</h3>
-            <p>Understand payment timing, invoices, plan changes, and renewal details.</p>
-          </article>
-          <article class="card">
-            <h3>Privacy and security</h3>
-            <p>Review account protection tips, data handling practices, and reporting steps.</p>
-          </article>
-        </div>
+      <section class="section" aria-labelledby="quick-links-title">
+        <header class="section-heading">
+          <h2 id="quick-links-title">Quick links</h2>
+          <p class="meta">Useful pages to visit while you are here.</p>
+        </header>
+        <article class="panel">
+          <ul>
+            <li><a class="inline-link" href="privacy.html">Privacy Policy</a></li>
+            <li><a class="inline-link" href="terms.html">Terms and Conditions</a></li>
+          </ul>
+        </article>
       </section>
 
-      <section class="section faq" id="faq">
-        <div class="section-heading">
-          <h2>Frequently asked questions</h2>
-          <p class="meta">Use the expandable answers below to get quick support without waiting for a reply.</p>
-        </div>
-        <details>
-          <summary>How do I reset my password?</summary>
-          <p>Use the password reset link on the sign-in screen. If you do not receive the email, check spam or contact support.</p>
-        </details>
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <header class="section-heading">
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <p class="meta">Quick answers to the most common help requests.</p>
+        </header>
         <details>
           <summary>Where can I find your privacy policy?</summary>
           <p>The privacy policy is available from the navigation bar and the footer on every page, including this one.</p>
         </details>
         <details>
           <summary>How do I contact a person for help?</summary>
-          <p>Email <a class="inline-link" href="support@example.com">support@example.com</a> and include a short description of the issue plus any relevant screenshots.</p>
+          <p>Email <a class="inline-link" href="mailto:support@example.com">support@example.com</a> and include a short description of the issue plus any relevant screenshots.</p>
         </details>
         <details>
           <summary>Do you have a status page?</summary>
@@ -97,8 +74,8 @@
 
     <footer class="footer">
       <span>Policy Studio</span>
-      <span><a class="inline-link" href="privacy-policy.html">Privacy Policy</a> · <a class="inline-link" href="terms-and-conditions.html">Terms and Conditions</a></span>
+      <span><a class="inline-link" href="privacy.html">Privacy Policy</a> · <a class="inline-link" href="terms.html">Terms and Conditions</a></span>
     </footer>
-  </div>
+  </article>
 </body>
 </html>
