@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Center</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center</title>
+  <meta name="description" content="Browse answers to common questions and support topics.">
 </head>
 <body>
-    <P>Dito lagay Help Center content dito din nav bar </P>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="privacy-policy.html" aria-label="Home">
+        <span class="brand-mark">H</span>
+        Policy Studio
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms</a>
+        <a href="help-center.html">Help Center</a>
+        <a href="404.html">404</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Support hub</p>
+        <h1>Help Center</h1>
+        <p>
+          Find quick answers, browse common topics, and connect with support when you need a human.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#faq">Browse FAQs</a>
+          <a class="button secondary" href="mailto:support@example.com">Email support</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <h2>Search the knowledge base</h2>
+          <p class="meta">This page is static, so the search box is visual only, but it mirrors a typical support experience.</p>
+        </div>
+        <div class="panel search-box">
+          <input type="search" aria-label="Search help articles" placeholder="Search topics like billing, account access, or privacy...">
+          <div class="meta-list">
+            <span class="meta-pill">Account access</span>
+            <span class="meta-pill">Billing</span>
+            <span class="meta-pill">Privacy</span>
+            <span class="meta-pill">Technical issues</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <h2>Popular topics</h2>
+          <p class="meta">The most common support questions are grouped below for faster browsing.</p>
+        </div>
+        <div class="grid columns-3">
+          <article class="card">
+            <h3>Getting started</h3>
+            <p>Learn how to create an account, update your profile, and navigate the platform.</p>
+          </article>
+          <article class="card">
+            <h3>Billing and plans</h3>
+            <p>Understand payment timing, invoices, plan changes, and renewal details.</p>
+          </article>
+          <article class="card">
+            <h3>Privacy and security</h3>
+            <p>Review account protection tips, data handling practices, and reporting steps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section-heading">
+          <h2>Frequently asked questions</h2>
+          <p class="meta">Use the expandable answers below to get quick support without waiting for a reply.</p>
+        </div>
+        <details>
+          <summary>How do I reset my password?</summary>
+          <p>Use the password reset link on the sign-in screen. If you do not receive the email, check spam or contact support.</p>
+        </details>
+        <details>
+          <summary>Where can I find your privacy policy?</summary>
+          <p>The privacy policy is available from the navigation bar and the footer on every page, including this one.</p>
+        </details>
+        <details>
+          <summary>How do I contact a person for help?</summary>
+          <p>Email <a class="inline-link" href="support@example.com">support@example.com</a> and include a short description of the issue plus any relevant screenshots.</p>
+        </details>
+        <details>
+          <summary>Do you have a status page?</summary>
+          <p>If you experience downtime, check with the support team. A status page can be added later if you need one.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Policy Studio</span>
+      <span><a class="inline-link" href="privacy-policy.html">Privacy Policy</a> · <a class="inline-link" href="terms-and-conditions.html">Terms and Conditions</a></span>
+    </footer>
+  </div>
 </body>
 </html>
