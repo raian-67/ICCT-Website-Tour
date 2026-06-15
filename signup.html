@@ -1,11 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
 </head>
 <body>
-    <P>Dito lagay Signup form</P>
+  <main>
+    <header>
+      <h1>Sign Up</h1>
+      <P>Create your account</P>
+    </header>
+
+    <section>
+      <form action="login.html" method="get">
+        <p>
+          <label for="name">Full name</label><br />
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </p>
+
+        <p>
+          <label for="signup-email">Email address</label><br />
+          <input type="email" id="signup-email" name="signup-email" placeholder="uresname@example.com" required />
+        </p>
+
+        <p>
+          <label for="signup-password">Password</label><br />
+          <input type="password" id="signup-password" name="signup-password" placeholder="Create a password" required />
+        </p>
+
+        <p>
+          <button type="submit">Create account</button>
+        </p>
+      </form>
+    </section>
+
+    <aside>
+      <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+    </aside>
+
+    <footer>
+      <p>&copy; 2026 ICCT. All rights reserved.</p>
+    </footer>
+  </main>
 </body>
 </html>
+
