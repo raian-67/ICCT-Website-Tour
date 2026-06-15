@@ -10,16 +10,16 @@ form.addEventListener('submit', (e) => {
  let errors = []
 
  if (firstname_input.value.trim() === '') {
-    // if we have a first name to input and then we are in the signup
+    // if we have a first name to input and then we are in the signup67
     errors = getsignupformerrors('Firstname_input.value, email_input.value, password_input.value')
  } 
  else{
-    // if we don't have a first name input then we are in the login
+    // if we don't have a first name input then we are in the login67
     errors = getloginformerrors('email_input.value, password_input.value')
 
  }
  if(error.lenght > 0 ) {
-    // if there is any errors 
+    // if there is any errors67
     e.preventDefault()
     error_message.innerText = errors.join('. ')
  }
